@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Crea memes divertidos y personalizados con memeMaker, la herramienta gratuita y fácil de usar. Sígueme en mis redes sociales para más contenido creativo y tutoriales."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/lol.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MemeMaker - unlessDev</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <nav class="nav_bar">
+          <p class="title_logo">unless<span>Dev</span></p>
+          <ul class="nav_items">
+            <li>
+              <a href="https://unlessdev.com.ar/" target="_blank"
+                ><img src="./assets/curriculum.webp" alt="Portfolio"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/unlessDev" target="_blank"
+                ><img src="./assets/githubBlanco.webp" alt="GitHub"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@unlessDev" target="_blank"
+                ><img src="./assets/youtuberojo.webp" alt="YouTube"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main">
+        <h1 class="title">Generador de Memes</h1>
+        <p class="info">Hecho por unlessDev // Sígueme en mis redes <3</p>
+        <div class="meme-generator">
+          <label for="imageFileInput"
+            >Selecciona o arrastra la imagen que deseas hacer Meme</label
+          >
+          <input type="file" id="imageFileInput" aria-label="Tu imagen aquí" />
+
+          <label for="topTextInput">Texto Superior</label>
+          <input
+            type="text"
+            id="topTextInput"
+            placeholder="When haces tus"
+            aria-label="Texto superior"
+          />
+
+          <label for="bottomTextInput">Texto Inferior</label>
+          <input
+            type="text"
+            id="bottomTextInput"
+            placeholder="momos en videos"
+            aria-label="Texto inferior"
+          />
+
+          <canvas id="meme"></canvas>
+
+          <div class="button-container">
+            <img
+              id="downloadButton"
+              class="icon-button icon-button-download"
+              src="./assets/downloadAZUL.webp"
+              alt="Download Image"
+              style="display: none"
+            />
+            <img
+              id="deleteButton"
+              class="icon-button icon-button-delete"
+              src="./assets/trashRojo.webp"
+              alt="Delete Image"
+              style="display: none"
+            />
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p class="footer_text">
+          No hay ni marca de agua, ni anuncios, ni nada similar. Solamente
+          guardalo y usalo cuando quieras. Seguime en mis redes y compartilo con
+          tus amigos.
+        </p>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
